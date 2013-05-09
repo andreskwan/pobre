@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="NoteBook" syncable="YES">
+    <entity name="NoteBook" representedClassName="KWNoteBook" syncable="YES">
         <attribute name="creationDate" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
         <attribute name="modificationDate" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
         <attribute name="name" attributeType="String" defaultValueString="New Notbook" indexed="YES" syncable="YES"/>

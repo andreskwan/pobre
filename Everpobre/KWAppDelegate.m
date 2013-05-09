@@ -7,6 +7,7 @@
 //
 
 #import "KWAppDelegate.h"
+#import "AGTCoreDataStack.h"
 
 @implementation KWAppDelegate
 

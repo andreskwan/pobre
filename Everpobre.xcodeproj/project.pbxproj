@@ -20,6 +20,8 @@
 		EA1EC88C173C2DE600EBBED7 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC88B173C2DE600EBBED7 /* AGTCoreDataTableViewController.m */; };
 		EA1EC88F173C2E2000EBBED7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1EC88E173C2E2000EBBED7 /* CoreData.framework */; };
 		EA1EC892173C30AC00EBBED7 /* Everpobre.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC890173C30AC00EBBED7 /* Everpobre.xcdatamodeld */; };
+		EA1EC897173C3CFE00EBBED7 /* _KWNoteBook.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC894173C3CFD00EBBED7 /* _KWNoteBook.m */; };
+		EA1EC898173C3CFE00EBBED7 /* KWNoteBook.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC896173C3CFE00EBBED7 /* KWNoteBook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,10 @@
 		EA1EC88B173C2DE600EBBED7 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
 		EA1EC88E173C2E2000EBBED7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EA1EC891173C30AC00EBBED7 /* Everpobre.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Everpobre.xcdatamodel; sourceTree = "<group>"; };
+		EA1EC893173C3CFD00EBBED7 /* _KWNoteBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KWNoteBook.h; sourceTree = SOURCE_ROOT; };
+		EA1EC894173C3CFD00EBBED7 /* _KWNoteBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KWNoteBook.m; sourceTree = SOURCE_ROOT; };
+		EA1EC895173C3CFD00EBBED7 /* KWNoteBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWNoteBook.h; sourceTree = SOURCE_ROOT; };
+		EA1EC896173C3CFE00EBBED7 /* KWNoteBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWNoteBook.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,10 @@
 		EA1EC889173C2DA900EBBED7 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				EA1EC893173C3CFD00EBBED7 /* _KWNoteBook.h */,
+				EA1EC894173C3CFD00EBBED7 /* _KWNoteBook.m */,
+				EA1EC895173C3CFD00EBBED7 /* KWNoteBook.h */,
+				EA1EC896173C3CFE00EBBED7 /* KWNoteBook.m */,
 				EA1EC890173C30AC00EBBED7 /* Everpobre.xcdatamodeld */,
 				EA1EC886173C2DA100EBBED7 /* AGTCoreDataStack.h */,
 				EA1EC887173C2DA100EBBED7 /* AGTCoreDataStack.m */,
@@ -203,6 +213,8 @@
 				EA1EC888173C2DA100EBBED7 /* AGTCoreDataStack.m in Sources */,
 				EA1EC88C173C2DE600EBBED7 /* AGTCoreDataTableViewController.m in Sources */,
 				EA1EC892173C30AC00EBBED7 /* Everpobre.xcdatamodeld in Sources */,
+				EA1EC897173C3CFE00EBBED7 /* _KWNoteBook.m in Sources */,
+				EA1EC898173C3CFE00EBBED7 /* KWNoteBook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

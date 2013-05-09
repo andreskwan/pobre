@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class AGTCoreDataStack;
 
 @interface KWAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) AGTCoreDataStack *model;
 
 @end

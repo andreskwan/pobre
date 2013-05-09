@@ -14,19 +14,24 @@
 
 +(NSString *) persistentStoreCoordinatorErrorNotificationName;
 
+//para crear instacias
 +(AGTCoreDataStack *) coreDataStackWithModelName:(NSString *)aModelName
-                               databaseFilename:(NSString*) aDBName;
+                                databaseFilename:(NSString*) aDBName;
 
 +(AGTCoreDataStack *) coreDataStackWithModelName:(NSString *)aModelName;
 
+
 +(AGTCoreDataStack *) coreDataStackWithModelName:(NSString *)aModelName
-                                    databaseURL:(NSURL*) aDBURL;
+                                     databaseURL:(NSURL*) aDBURL;
+
 
 -(id) initWithModelName:(NSString *)aModelName
             databaseURL:(NSURL*) aDBURL;
 
 -(void) zapAllData;
 
+//guarda y si la cagas guarda este bloque
+//el comprueba que de verdad haga falta guardar algo
 -(void) saveWithErrorBlock: (void(^)(NSError *error))errorBlock;
 
 @end

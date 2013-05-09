@@ -8,11 +8,42 @@
 
 #import "KWAppDelegate.h"
 #import "AGTCoreDataStack.h"
+#import "KWNoteBook.h"
 
 @implementation KWAppDelegate
 
+-(void) trastearConDatos
+{
+    KWNoteBook * nb = [KWNoteBook insertInManagedObjectContext:self.model.context];
+    KWNoteBook * nb2 = [KWNoteBook insertInManagedObjectContext:self.model.context];
+
+    NSLog(@"Notebook : %@", nb);
+    NSLog(@"Notebook : %@", nb2);
+    
+    //Buscamos
+    NSFetchRequest * request = [[NSFetchRequest alloc] initWithEntityName:[KWNoteBook entityName]];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES], [NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:NO]];
+    NSError *err = nil;
+    NSArray *results = [self.model.context executeFetchRequest:request error:&err];
+    if (results == nil) {
+        //Error al buscar
+        NSLog(@"Error al buscar: %@",err);
+    }
+    NSLog(@"Librerias: %@",results);
+    
+    // Guardamos Objetos
+    [self.model saveWithErrorBlock:^(NSError *error)
+     {
+         NSLog(@"la cagamos: %@",error);
+     }];
+    
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    //inicializo el modelo (coreDataStack)
+    self.model = [AGTCoreDataStack coreDataStackWithModelName:@"Everpobre"];
+    [self trastearConDatos];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];

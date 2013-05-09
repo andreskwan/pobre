@@ -11,11 +11,13 @@ extern const struct KWNoteBookAttributes {
 } KWNoteBookAttributes;
 
 extern const struct KWNoteBookRelationships {
+	__unsafe_unretained NSString *notes;
 } KWNoteBookRelationships;
 
 extern const struct KWNoteBookFetchedProperties {
 } KWNoteBookFetchedProperties;
 
+@class KWNote;
 
 
 
@@ -64,6 +66,13 @@ extern const struct KWNoteBookFetchedProperties {
 
 
 
+@property (nonatomic, strong) KWNote *notes;
+
+//- (BOOL)validateNotes:(id*)value_ error:(NSError**)error_;
+
+
+
+
 
 @end
 
@@ -90,6 +99,11 @@ extern const struct KWNoteBookFetchedProperties {
 - (void)setPrimitiveName:(NSString*)value;
 
 
+
+
+
+- (KWNote*)primitiveNotes;
+- (void)setPrimitiveNotes:(KWNote*)value;
 
 
 @end

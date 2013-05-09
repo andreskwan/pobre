@@ -1,42 +1,44 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to KWNoteBook.m instead.
+// Make changes to KWNote.m instead.
 
-#import "_KWNoteBook.h"
+#import "_KWNote.h"
 
-const struct KWNoteBookAttributes KWNoteBookAttributes = {
+const struct KWNoteAttributes KWNoteAttributes = {
 	.creationDate = @"creationDate",
 	.modificationDate = @"modificationDate",
 	.name = @"name",
+	.photo = @"photo",
+	.text = @"text",
 };
 
-const struct KWNoteBookRelationships KWNoteBookRelationships = {
-	.notes = @"notes",
+const struct KWNoteRelationships KWNoteRelationships = {
+	.notebook = @"notebook",
 };
 
-const struct KWNoteBookFetchedProperties KWNoteBookFetchedProperties = {
+const struct KWNoteFetchedProperties KWNoteFetchedProperties = {
 };
 
-@implementation KWNoteBookID
+@implementation KWNoteID
 @end
 
-@implementation _KWNoteBook
+@implementation _KWNote
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
-	return [NSEntityDescription insertNewObjectForEntityForName:@"NoteBook" inManagedObjectContext:moc_];
+	return [NSEntityDescription insertNewObjectForEntityForName:@"Note" inManagedObjectContext:moc_];
 }
 
 + (NSString*)entityName {
-	return @"NoteBook";
+	return @"Note";
 }
 
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
-	return [NSEntityDescription entityForName:@"NoteBook" inManagedObjectContext:moc_];
+	return [NSEntityDescription entityForName:@"Note" inManagedObjectContext:moc_];
 }
 
-- (KWNoteBookID*)objectID {
-	return (KWNoteBookID*)[super objectID];
+- (KWNoteID*)objectID {
+	return (KWNoteID*)[super objectID];
 }
 
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
@@ -70,7 +72,21 @@ const struct KWNoteBookFetchedProperties KWNoteBookFetchedProperties = {
 
 
 
-@dynamic notes;
+@dynamic photo;
+
+
+
+
+
+
+@dynamic text;
+
+
+
+
+
+
+@dynamic notebook;
 
 	
 

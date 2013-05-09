@@ -19,6 +19,7 @@
 		EA1EC888173C2DA100EBBED7 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC887173C2DA100EBBED7 /* AGTCoreDataStack.m */; };
 		EA1EC88C173C2DE600EBBED7 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC88B173C2DE600EBBED7 /* AGTCoreDataTableViewController.m */; };
 		EA1EC88F173C2E2000EBBED7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1EC88E173C2E2000EBBED7 /* CoreData.framework */; };
+		EA1EC892173C30AC00EBBED7 /* Everpobre.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC890173C30AC00EBBED7 /* Everpobre.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EA1EC88A173C2DE600EBBED7 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
 		EA1EC88B173C2DE600EBBED7 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
 		EA1EC88E173C2E2000EBBED7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EA1EC891173C30AC00EBBED7 /* Everpobre.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Everpobre.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		EA1EC889173C2DA900EBBED7 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				EA1EC890173C30AC00EBBED7 /* Everpobre.xcdatamodeld */,
 				EA1EC886173C2DA100EBBED7 /* AGTCoreDataStack.h */,
 				EA1EC887173C2DA100EBBED7 /* AGTCoreDataStack.m */,
 			);
@@ -199,6 +202,7 @@
 				EA1EC87A173C2D4700EBBED7 /* KWAppDelegate.m in Sources */,
 				EA1EC888173C2DA100EBBED7 /* AGTCoreDataStack.m in Sources */,
 				EA1EC88C173C2DE600EBBED7 /* AGTCoreDataTableViewController.m in Sources */,
+				EA1EC892173C30AC00EBBED7 /* Everpobre.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +319,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA1EC890173C30AC00EBBED7 /* Everpobre.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA1EC891173C30AC00EBBED7 /* Everpobre.xcdatamodel */,
+			);
+			currentVersion = EA1EC891173C30AC00EBBED7 /* Everpobre.xcdatamodel */;
+			path = Everpobre.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EA1EC85E173C2D4700EBBED7 /* Project object */;
 }

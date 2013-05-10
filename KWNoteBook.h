@@ -2,5 +2,5 @@
 
 @interface KWNoteBook : _KWNoteBook {}
 // Custom logic goes here.
-+(id) notebookInCOntext: (NSManagedObjectContext *)aContext;
++(id) notebookInContext: (NSManagedObjectContext *)aContext;
 @end

@@ -22,6 +22,8 @@
 		EA1EC892173C30AC00EBBED7 /* Everpobre.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC890173C30AC00EBBED7 /* Everpobre.xcdatamodeld */; };
 		EA1EC897173C3CFE00EBBED7 /* _KWNoteBook.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC894173C3CFD00EBBED7 /* _KWNoteBook.m */; };
 		EA1EC898173C3CFE00EBBED7 /* KWNoteBook.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC896173C3CFE00EBBED7 /* KWNoteBook.m */; };
+		EA1EC89D173C52D100EBBED7 /* _KWNote.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC89A173C52D100EBBED7 /* _KWNote.m */; };
+		EA1EC89E173C52D100EBBED7 /* KWNote.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1EC89C173C52D100EBBED7 /* KWNote.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,10 @@
 		EA1EC894173C3CFD00EBBED7 /* _KWNoteBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KWNoteBook.m; sourceTree = SOURCE_ROOT; };
 		EA1EC895173C3CFD00EBBED7 /* KWNoteBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWNoteBook.h; sourceTree = SOURCE_ROOT; };
 		EA1EC896173C3CFE00EBBED7 /* KWNoteBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWNoteBook.m; sourceTree = SOURCE_ROOT; };
+		EA1EC899173C52D000EBBED7 /* _KWNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KWNote.h; sourceTree = SOURCE_ROOT; };
+		EA1EC89A173C52D100EBBED7 /* _KWNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KWNote.m; sourceTree = SOURCE_ROOT; };
+		EA1EC89B173C52D100EBBED7 /* KWNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWNote.h; sourceTree = SOURCE_ROOT; };
+		EA1EC89C173C52D100EBBED7 /* KWNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWNote.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,10 @@
 				EA1EC895173C3CFD00EBBED7 /* KWNoteBook.h */,
 				EA1EC896173C3CFE00EBBED7 /* KWNoteBook.m */,
 				EA1EC890173C30AC00EBBED7 /* Everpobre.xcdatamodeld */,
+				EA1EC899173C52D000EBBED7 /* _KWNote.h */,
+				EA1EC89A173C52D100EBBED7 /* _KWNote.m */,
+				EA1EC89B173C52D100EBBED7 /* KWNote.h */,
+				EA1EC89C173C52D100EBBED7 /* KWNote.m */,
 				EA1EC886173C2DA100EBBED7 /* AGTCoreDataStack.h */,
 				EA1EC887173C2DA100EBBED7 /* AGTCoreDataStack.m */,
 			);
@@ -215,6 +225,8 @@
 				EA1EC892173C30AC00EBBED7 /* Everpobre.xcdatamodeld in Sources */,
 				EA1EC897173C3CFE00EBBED7 /* _KWNoteBook.m in Sources */,
 				EA1EC898173C3CFE00EBBED7 /* KWNoteBook.m in Sources */,
+				EA1EC89D173C52D100EBBED7 /* _KWNote.m in Sources */,
+				EA1EC89E173C52D100EBBED7 /* KWNote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

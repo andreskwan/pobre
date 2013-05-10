@@ -9,22 +9,38 @@
 #import "KWAppDelegate.h"
 #import "AGTCoreDataStack.h"
 #import "KWNoteBook.h"
+#import "KWNote.h"
 
 @implementation KWAppDelegate
 
 -(void) trastearConDatos
 {
+    //creamos notebooks
     KWNoteBook * nb = [KWNoteBook insertInManagedObjectContext:self.model.context];
     KWNoteBook * nb2 = [KWNoteBook insertInManagedObjectContext:self.model.context];
 
-    NSLog(@"Notebook : %@", nb);
-    NSLog(@"Notebook : %@", nb2);
+    nb.name = @"Nueva Libreta";
+    
+    //creamos notas
+    KWNote * nota = [KWNote noteInNoteBook:nb
+                               withContext:self.model.context];
+    
+    NSLog(@"La nueva nota : %@", nota);
+    NSLog(@"El notebook : %@", nb);
+    
+//    NSLog(@"La nueva nota : %@", nb);
+//    NSLog(@"El notebook : %@", nb2);
     
     //Buscamos
     NSFetchRequest * request = [[NSFetchRequest alloc] initWithEntityName:[KWNoteBook entityName]];
-    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES], [NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:NO]];
+    
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name"
+                                                              ascending:YES],
+                                [NSSortDescriptor sortDescriptorWithKey:@"creationDate"
+                                                              ascending:NO]];
     NSError *err = nil;
-    NSArray *results = [self.model.context executeFetchRequest:request error:&err];
+    NSArray *results = [self.model.context executeFetchRequest:request
+                                                         error:&err];
     if (results == nil) {
         //Error al buscar
         NSLog(@"Error al buscar: %@",err);

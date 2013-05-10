@@ -8,13 +8,35 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Everpobre/KWAppDelegate.m"
-         timestampString = "389827147.367597"
+         timestampString = "389889363.981421"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "19"
+         endingLineNumber = "19"
+         landmarkName = "-trastearConDatos"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Everpobre/KWAppDelegate.h"
+         timestampString = "389893756.994937"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "17"
          endingLineNumber = "17"
-         landmarkName = "-trastearConDatos"
-         landmarkType = "5">
+         landmarkName = "@interface KWAppDelegate"
+         landmarkType = "2">
       </FileBreakpoint>
    </FileBreakpoints>
+   <ExceptionBreakpoints>
+      <ExceptionBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         scope = "0"
+         stopOnStyle = "0">
+      </ExceptionBreakpoint>
+   </ExceptionBreakpoints>
 </Bucket>
